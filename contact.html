@@ -1,5 +1,59 @@
-<title>Contact - Sounds of Africa</title>
-<main>
-    <h1>Contact</h1>
-    <p>Get in touch with us through this page. Content will be added soon.</p>
-</main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sounds of Africa</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+   <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Fill out the form below and we'll get back to you as soon as possible.</p>
+        
+        <form action="#" method="POST">
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <!-- Message Field -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <!-- Country Dropdown with Data List -->
+            <label for="country">Country:</label>
+            <input list="countries" id="country" name="country" required>
+            <datalist id="countries">
+                <option value="rwanda">
+                <option value="South Africa">
+                <option value="Kenya">
+                <option value="Egypt">
+                <option value="Ghana">
+                <option value="Uganda">
+                
+            </datalist>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Google Map Embeding -->
+        <h3>Our Location</h3>
+        <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250797.4326421036!2d29.3102671!3d-1.9390748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19ddecf555555555%3A0x42e2034b678aa440!2sKigali%2C+Rwanda!5e0!3m2!1sen!2sus!4v1679006743325!5m2!1sen!2sus" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+</iframe>
+
+    </section>
+
+</body>
+</html>
